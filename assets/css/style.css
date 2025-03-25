@@ -5299,7 +5299,7 @@ a.text-theme:hover,
     margin: auto
 }
 #logo-back {
-    background-color: #1ca8cb;
+    background-color:var(--title-color);
 }
 
 .widget_offer .offer-title {
@@ -7350,7 +7350,7 @@ ol.wp-block-rss {
     width: 19%;
     height: 92px;
     z-index: -1;
-    background-color: var(--theme-color)
+    background-color: var(--title-color)
 }
 
 @media (min-width: 1930px) {
@@ -7478,6 +7478,7 @@ ol.wp-block-rss {
 .header-layout3 .header-logo {
     padding: 0 40px
 }
+
 
 /* @media (max-width: 1399px) {
     .header-layout3 .header-logo {
@@ -8968,6 +8969,15 @@ blockquote.has-very-dark-gray-color {
     display: inline-block
 }
 
+/* custom H1 to fix SCO */
+#small-h1   h1{
+    font-size: 16px;
+    margin: 0; /* Removes top and bottom margin */
+    display: inline; 
+   
+
+}
+
 .share-links .wp-block-tag-cloud a,
 .share-links .tagcloud a {
     background-color: rgba(225, 228, 229, 0.2)
@@ -9875,9 +9885,14 @@ ul.comment-list:has(>.th-comment-item ~ .th-comment-item):first-child>.th-post-c
     display: block
 }
 
-.hero-style1 .hero-title {
+/* .hero-style1 .hero-title {
     color: var(--white-color);
     margin-bottom: 45px
+} */
+
+.hero-style1 .hero-title {
+    color: var(--white-color);
+    margin-bottom: 45px ;
 }
 
 .hero-style1 .hero-text {
@@ -10092,7 +10107,7 @@ ul.comment-list:has(>.th-comment-item ~ .th-comment-item):first-child>.th-post-c
 
 .hero-2 .th-hero-bg {
     border-radius: 24px;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .hero-2 .th-hero-bg:before {
@@ -10498,9 +10513,14 @@ ul.comment-list:has(>.th-comment-item ~ .th-comment-item):first-child>.th-post-c
     overflow: initial
 }
 
+/* .hero-3 .th-hero-bg {
+    width: 100%;
+    height: 100%;
+} */
+
 .hero-3 .th-hero-bg {
     width: 100%;
-    height: 100%
+    height: 110%;
 }
 
 .hero-3 .th-hero-bg:before {
@@ -10515,7 +10535,7 @@ ul.comment-list:has(>.th-comment-item ~ .th-comment-item):first-child>.th-post-c
     position: absolute;
     inset: 0;
     width: 100%;
-    height: 100%;
+    height: 110%;
     object-fit: cover;
     overflow: hidden
 }
@@ -10747,9 +10767,19 @@ ul.comment-list:has(>.th-comment-item ~ .th-comment-item):first-child>.th-post-c
     font-size: 16px
 }
 
-.hero3-swiper-custom {
+/* .hero3-swiper-custom {
     position: relative;
     right: 0;
+    bottom: -186px;
+    min-width: 424px;
+    height: 110px;
+    background-color: var(--theme-color);
+    z-index: 99
+} */
+
+.hero3-swiper-custom {
+    position: relative;
+    left: 0;
     bottom: -186px;
     min-width: 424px;
     height: 110px;
