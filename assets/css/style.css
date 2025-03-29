@@ -4885,6 +4885,11 @@ a.text-theme:hover,
     padding-right: 20px
 }
 
+.view-more{
+    
+    justify-self: center;
+}
+
 .widget_nav_menu .sub-menu {
     margin-left: 10px
 }
@@ -5709,7 +5714,8 @@ a.text-theme:hover,
 
 .widget-call .info-box_link {
     font-size: 18px;
-    color: var(--white-color)
+    color: var(--white-color);
+    padding-top: 2px;
 }
 
 .widget-call .info-box_link:hover {
@@ -7808,6 +7814,10 @@ ol.wp-block-rss {
 .th-widget-contact {
     max-width: 260px;
     margin-bottom: -0.4em
+}
+
+ #email-id {
+    padding-top: 10px;
 }
 
 .info-box_text {
